@@ -1,0 +1,15 @@
+fund_master
+
+No duplicate rows
+
+12 missing risk grades
+
+All scheme codes numeric
+
+--------------------------------
+
+nav_history
+
+Date column needs conversion
+
+5 missing NAV values
