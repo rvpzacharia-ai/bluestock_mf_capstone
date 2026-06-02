@@ -1,0 +1,30 @@
+Day 1 Data Quality Summary
+
+Datasets Loaded:
+- 10 provided datasets
+
+API Data Fetched:
+- HDFC Top100 NAV
+- SBI Bluechip NAV
+- ICICI Bluechip NAV
+- Nippon Large Cap NAV
+- Axis Bluechip NAV
+- Kotak Bluechip NAV
+
+Checks Performed:
+- Shape inspection
+- Data type inspection
+- Head inspection
+- Missing value inspection
+- Fund master exploration
+- AMFI code validation
+- Live NAV API ingestion
+
+Observations:
+- fund_master contains scheme metadata.
+- nav_history contains historical NAV values.
+- Date fields require datetime conversion.
+- NAV values may require numeric conversion.
+
+Status:
+Ready for preprocessing and EDA.
