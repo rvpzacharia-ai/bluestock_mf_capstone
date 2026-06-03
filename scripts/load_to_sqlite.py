@@ -7,9 +7,9 @@ engine = create_engine(
 
 files = {
     "fund_master": "data/processed/01_fund_master_clean.csv",
-    "nav_history": "data/processed/nav_history_clean.csv",
-    "scheme_performance": "data/processed/scheme_performance_clean.csv",
-    "investor_transactions": "data/processed/investor_transactions_clean.csv"
+    "nav_history": "data/processed/02_nav_history_clean.csv",
+    "scheme_performance": "data/processed/07_scheme_performance_clean.csv",
+    "investor_transactions": "data/processed/08_investor_transactions_clean.csv"
 }
 
 for table, path in files.items():
