@@ -1,40 +1,107 @@
-\# Bluestock MF Capstone
+# Bluestock Mutual Fund Analytics Capstone
 
+## Project Overview
 
+This project analyzes Indian mutual fund data using Python, Pandas, SQL, and SQLite. The goal is to build a complete data pipeline from raw data ingestion to data cleaning, database design, SQL analytics, and dashboard-ready datasets.
 
-\## Day 1 — Data Quality \& Anomaly Report
+## Project Objectives
 
+* Collect and validate mutual fund datasets
+* Clean and standardize financial data
+* Build a SQLite analytics database
+* Perform SQL-based analysis
+* Generate insights on fund performance, NAV trends, SIP inflows, AUM, and investor transactions
 
+---
 
-\### 1. Null Values
+## Datasets Used
 
-\- \*\*File:\*\* `04\_monthly\_sip\_inflows.csv`
+1. Fund Master
+2. NAV History
+3. AUM by Fund House
+4. Monthly SIP Inflows
+5. Category Inflows
+6. Industry Folio Count
+7. Scheme Performance
+8. Investor Transactions
+9. Portfolio Holdings
+10. Benchmark Indices
 
-\- \*\*Column:\*\* `yoy\_growth\_pct` — 12 NULLs (expected: no prior-year data for first 12 months)
+Additional live NAV data was fetched from MFAPI for selected mutual fund schemes.
 
-\- \*\*Action:\*\* Leave as NaN; handle downstream in analysis
+---
 
+## Project Structure
 
+```text
+bluestock_mf_capstone/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── db/
+├── scripts/
+├── sql/
+├── reports/
+├── dashboard/
+├── notebooks/
+├── requirements.txt
+└── README.md
+```
 
-\### 2. Incorrect dtypes
+---
 
-\- \*\*Files:\*\* 01, 02, 03, 04, 05, 06, 08, 09, 10
+## Day 1 Deliverables
 
-\- \*\*Issue:\*\* Date columns (`date`, `month`, `launch\_date`, `transaction\_date`, `portfolio\_date`) read as `object` instead of `datetime64`
+* Project setup and folder structure
+* Data ingestion using Pandas
+* Data quality checks
+* AMFI code validation
+* Fund master exploration
+* Live NAV API integration
+* Data quality summary report
 
-\- \*\*Action:\*\* Apply `pd.to\_datetime()` during Day 2 processing
+---
 
+## Day 2 Deliverables
 
+* Cleaned and validated datasets
+* Processed CSV files generated
+* SQLite database created
+* Star schema design
+* SQL analytical queries
+* Row count validation
+* Data dictionary documentation
 
-\### 3. Pandas Deprecation Warning
+---
 
-\- \*\*Cause:\*\* `select\_dtypes(include="object")` triggers `Pandas4Warning`
+## Key Technologies
 
-\- \*\*Action:\*\* Replace with `include="string"` in Day 2 refactor
+* Python
+* Pandas
+* NumPy
+* SQLAlchemy
+* SQLite
+* Requests
+* Jupyter Notebook
+* Plotly
+* Matplotlib
 
+---
 
+## Outputs
 
-\### 4. Duplicate Rows
+* 10 cleaned datasets
+* SQLite database (`bluestock_mf.db`)
+* SQL schema
+* Analytical SQL queries
+* Data quality reports
+* Data dictionary
 
-\- \*\*Status:\*\* None detected across all 10 files ✅
+---
+
+## Status
+
+Day 1 Completed
+
+ Day 2 Completed
 
