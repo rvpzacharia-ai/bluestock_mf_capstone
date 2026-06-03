@@ -1,0 +1,12 @@
+Row Count Validation Report
+
+fund_master: 40 rows
+
+nav_history: 46000 rows
+
+scheme_performance: 40 rows
+
+investor_transactions: 32778 rows
+
+Validation Status:
+All SQLite table row counts successfully verified after loading cleaned datasets.
