@@ -108,46 +108,24 @@ The third phase of the project focused on analyzing mutual fund industry trends 
 * Matplotlib-based analytical charts
 * Export-ready chart files for reporting
 
-### Deliverables
+## Day 4 – Fund Performance Analytics
 
-* EDA_Analysis.ipynb
-* 15+ visualizations
-* Exported PNG charts
-* Interactive Plotly HTML visualizations
-* Business insights documentation
+Completed:
 
----
+- Daily Return Calculation
+- CAGR (1Y, 3Y, 5Y)
+- Sharpe Ratio
+- Sortino Ratio
+- Alpha & Beta Analysis
+- Maximum Drawdown Analysis
+- Fund Scorecard Generation
+- Benchmark Comparison
+- Tracking Error Analysis
 
-## Key Technologies
-
-* Python
-* Pandas
-* NumPy
-* SQLAlchemy
-* SQLite
-* Requests
-* Jupyter Notebook
-* Plotly
-* Matplotlib
-* Seaborn
-
----
-
-## Outputs
-
-* 10 cleaned datasets
-* SQLite database (`bluestock_mf.db`)
-* SQL schema
-* Analytical SQL queries
-* Data quality reports
-* Data dictionary
-* EDA_Analysis.ipynb
-* 15+ visualizations
-* Exported PNG charts
-* Interactive Plotly visualizations
-* Business insights documentation
-
----
+Outputs:
+- fund_scorecard.csv
+- alpha_beta.csv
+- benchmark_comparison.png
 
 ## Status
 
@@ -155,4 +133,6 @@ The third phase of the project focused on analyzing mutual fund industry trends 
 
 ✅ Day 2 Completed
 
-✅ Day 3 Completed (EDA & Visualization)
+✅ Day 3 Completed 
+
+✅ Day 4 Completed 
