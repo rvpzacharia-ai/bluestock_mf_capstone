@@ -1,7 +1,7 @@
 # Mutual Fund Analytics Data Dictionary
 
 ## 01_fund_master.csv
-
+gir
 | Column | Data Type | Description |
 |----------|----------|----------|
 | amfi_code | INTEGER | Unique AMFI scheme code |
