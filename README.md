@@ -98,35 +98,53 @@ The project integrates multiple mutual fund datasets covering industry, investor
 bluestock_mf_capstone/
 │
 ├── data/
-│   ├── raw/
-│   ├── processed/
+│   ├── raw/                      # Original AMFI downloads
+│   ├── processed/                # Cleaned datasets
 │   └── db/
-│
-├── dashboard/
-│   ├── bluestock_mf_dashboard.pbix
-│   ├── Dashboard.pdf
-│   └── screenshots/
+│       └── bluestock_mf.db       # SQLite database
 │
 ├── notebooks/
+│   ├── 01_data_ingestion.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_eda_analysis.ipynb
+│   ├── 04_performance_analytics.ipynb
+│   └── 05_advanced_analytics.ipynb
+│
+├── scripts/
+│   ├── amfi_validation.py
+│   ├── check_db.py
+│   ├── clean_nav_history.py
+│   ├── clean_performance.py
+│   ├── clean_transactions.py
+│   ├── copy_remaining_files.py
+│   ├── data_ingestion.py
+│   ├── explore_fund_master.py
+│   ├── explore_nav_history.py
+│   ├── fund_master_analysis.py
+│   ├── live_nav_fetch.py
+│   ├── load_to_sqlite.py
+│   ├── verify_counts.py
+│   └── run_pipeline.py           # Master execution script
+│
+├── sql/
+│   ├── schema.sql
+│   └── queries.sql
+│
+├── dashboard/
+│   └── Mutual_Fund_Analytics.pbix
+│
+├── exports/
+│   ├── charts/
+│   ├── reports/
+│   └── screenshots/
 │
 ├── reports/
 │   ├── Final_Report.pdf
 │   └── Presentation.pptx
 │
-├── scripts/
-│   ├── ingestion.py
-│   ├── cleaning.py
-│   ├── database.py
-│   ├── analytics.py
-│   ├── risk_analysis.py
-│   ├── recommender.py
-│   └── run_pipeline.py
-│
-├── sql/
-│
+├── README.md
 ├── requirements.txt
-│
-└── README.md
+└── .gitignore
 ```
 
 ---
